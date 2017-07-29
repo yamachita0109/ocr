@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+		<title>OCR</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="six columns">
+					<label>Input Area</label>
+					<input type="text" class="u-full-width" placeholder="File Path..." id="in">
+				</div>
+			</div>
+			<div class="row">
+				<button type="button" class="button-primary" id="subBtn">Submit</button>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<label>Console Area</label>
+					<textarea class="u-full-width" id="con"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<label>Result Area</label>
+					<textarea class="u-full-width" id="res"></textarea>
+				</div>
+			</div>
+		</div>
+		<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.7/dist/tesseract.js'></script>
+		<script src='./js.js'></script>
+	</body>
+</html>
